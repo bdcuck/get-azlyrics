@@ -1,0 +1,29 @@
+{
+  "name": "get-azlyrics",
+  "version": "1.0.0",
+  "description": "Get lyrics from AZLyrics by simple [Artist - Song] query",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdcuck/get-azlyrics.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "AZLyrics",
+    "api",
+    "simple"
+  ],
+  "author": "Bd Nugget <info@medchem.nl>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bdcuck/get-azlyrics/issues"
+  },
+  "homepage": "https://github.com/bdcuck/get-azlyrics#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "then-request": "^5.0.0"
+  }
+}
