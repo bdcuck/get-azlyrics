@@ -14,3 +14,5 @@ lyrics.getLyrics('daft punk - Daftendirekt')
     // outputs: Dafunk back to the punk come on
 
 ```
+
+It is pretty crappy and broken, and you're more than welcome to fix my spaghetti code.

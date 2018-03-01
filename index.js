@@ -33,10 +33,10 @@ exports.getLyrics = msg => {
 		.then(res => {
 			const $ = cheerio.load(res.getBody('utf8'));
 			const lyricsDiv = $('.col-xs-12.col-lg-8.text-center')[0].children[16].children;
-			let lyrics = `${lyricsDiv[2].data.substr(1)}\n`;
-			for(let i = 4; i < lyricsDiv.length; i+=2)
+			let lyrics = '';
+			for(let i = 2; i < lyricsDiv.length; i++)
 			{
-				const line = `${lyricsDiv[i].data.substr(1)}\n`;
+				const line = lyricsDiv[i].data ? `${lyricsDiv[i].data.substr(1)}\n` : ``;
 				lyrics += line;
 			}
 			lyrics = lyrics.slice(0,-2);
